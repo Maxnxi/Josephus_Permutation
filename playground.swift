@@ -1,6 +1,10 @@
 import Foundation
 
 func josephusSurvivor(_ n: Int, _ k: Int) -> Int {
+    if k == 1 {
+        return n
+    }
+    
     var someArr: [Int] = Array(1...n)
     var counter = k
     
